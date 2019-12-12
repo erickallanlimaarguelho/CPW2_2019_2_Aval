@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "decorativa";
+  src: url(../fonts/Parisienne-Regular.ttf);
+}
+@font-face {
+  font-family: "padrao";
+  src: url(../fonts/Amiri-Regular.ttf);
+}
+body {
+  margin: 0;
+  background-color: #D7CDCC;
+}
+
+#banner {
+  background-color: #FF1B1C;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+#banner * {
+  display: inline;
+  vertical-align: middle;
+}
+#banner img {
+  width: 70px;
+  margin-right: 20px;
+}
+#banner h1 {
+  font-family: "decorativa";
+  color: white;
+  text-shadow: 2px 2px #262730;
+}
+
+#corpo {
+  padding: 10px;
+  border: 1px solid #262730;
+  width: 95%;
+  margin: auto;
+}
+#corpo #UN {
+  padding-left: 10px;
+  font-family: "padrao";
+}
+#corpo label, #corpo input {
+  font-family: "padrao";
+}
+#corpo input {
+  margin-bottom: 10px;
+  height: 20px;
+  font-size: 100%;
+  border-radius: 5px;
+  border: 1px solid #262730;
+  padding-left: 5px;
+}
+#corpo input[type=submit] {
+  display: block;
+  padding: 10px 20px;
+  /* Anula a altura padrão */
+  height: inherit;
+  background-color: #262730;
+  color: white;
+  border: none;
+}
+#corpo input[type=number] {
+  width: 100px;
+}
+
+#Fake {
+  color: #D7CDCC;
+}
+
+#Lista {
+  margin: 10px auto;
+}
+#Lista table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0px auto 30px auto;
+  width: 95%;
+  font-family: "padrao";
+}
+#Lista thead {
+  background-color: #FF1B1C;
+  color: white;
+}
+#Lista tr:nth-child(even) {
+  background-color: #626477;
+}
+#Lista tr td {
+  font-size: 90%;
+}
+#Lista tr th, #Lista tr td, #Lista tr img {
+  padding: 5px 0px;
+  text-align: center;
+}
+#Lista tr th:first-child, #Lista tr td:first-child, #Lista tr img:first-child {
+  text-align: left;
+  padding-left: 5px;
+}
+#Lista tr th:last-child, #Lista tr td:last-child, #Lista tr img:last-child {
+  text-align: right;
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #Corpo form {
+    width: 80%;
+    display: block;
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
